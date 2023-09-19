@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FragmentEditBicis">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marca:"
+
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.183"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.109"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="72dp"
+            android:text="Color:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            app:layout_constraintVertical_bias="0.017"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <EditText
+            android:id="@+id/etMarca"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:hint="Marca"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/etColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.587"
+            tools:ignore="MissingConstraints"></EditText>
+
+        <EditText
+            android:id="@+id/etColor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:hint="Color"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            app:layout_constraintVertical_bias="0.408"
+            tools:ignore="MissingConstraints"></EditText>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="8dp"
+            android:text="Guardar"
+            android:textSize="11dp"
+            android:textStyle="italic"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/Inacap"
+            app:layout_constraintEnd_toStartOf="@+id/etColor"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:cornerRadius="12dp"
+            tools:ignore="MissingConstraints"></Button>
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="8dp"
+            android:text="Cancelar"
+            android:textSize="11dp"
+            android:textStyle="italic"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/Inacap"
+            app:layout_constraintEnd_toEndOf="@+id/etColor"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:cornerRadius="12dp"
+            tools:ignore="MissingConstraints"></Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
